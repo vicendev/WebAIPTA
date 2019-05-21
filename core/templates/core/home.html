@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+    <title>{% block title %}Inicio{% endblock %}</title>
+
+{% load static %}
+{% block content %}
+    <!-- Mensaje -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Presentanción</span>
+              </h2>
+              <p class="mb-0">La Asociación Internacional Psicoanálisis a Través del Arte, es una institución pluralista y democrática conformada por profesionales de los diversos
+               campos del conocimiento Está abierto a Psicólogos psicoanalistas, psicomotricistas psicoanalíticos, psiquiatras, médicos, teóricos e historiadores del arte 
+               que adhieran al psicoanálisis como anclaje en sus conceptualizaciones Mejor aún si estos profesionales adhieren a los principios del paradigma de la complejidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

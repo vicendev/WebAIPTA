@@ -1,0 +1,58 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Revista - El Caballo Azul{% endblock title %}
+
+{% block content %}
+    <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content mt-5">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+                <div class="bg-faded rounded p-5 text-center">
+                    <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Revista El Caballo Azul</span>
+                    </h2>
+                    <p>La Revista <b><i>El Caballo azul</i></b> es uno de los medios de expresión y difusión de los integrantes de la Asociación Internacional Psicoanálisis a Través del Arte, organización abierta y relacionada con distintas Escuelas Psicoanalíticas, desde la visión que éstas tienen de la cultura. </p>
+                    <p>Su difusión <b><i>on líne</i></b> es internacional y su acceso libre. En sus páginas, se publican contribuciones de profesionales de diverso origen y que adhieran al psicoanálisis como teoría de base y en lo posible dentro del paradigma de la complejidad o del Psicoanálisis de conceptos ampliados. </p><br/>
+                    <p><a href="{% url 'store'%}" style="color:green;">Acceda a las revistas desde aquí</a></p><br/>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="P242">Nombre: </label>
+                                </td>
+                                <td>
+                                    <input name="name" id="P242" type="text" class="form-control mt-1" placeholder="Ingrese su nombre">
+                                </td>
+                            </tr>		
+                            <tr>
+                                <td>
+                                    <label for="P246">Mail: </label>
+                                </td>
+                                <td>
+                                    <input name="email" id="P246" type="email" class="form-control mt-1" placeholder="Ingrese su email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="P250">Teléfono: </label>
+                                </td>
+                                <td>
+                                    <input name="name" id="P250" type="tel" class="form-control mt-1" placeholder="Ingrese su número">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" colspan="2">
+                                    <button type="submit" class="btn btn-primary btn-block py-2 mt-2">Enviar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>              
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

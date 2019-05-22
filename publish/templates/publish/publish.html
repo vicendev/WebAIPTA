@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static  %}
+
+{% block title %}Publicaciones{% endblock title %}
+
+{% block content %}
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Publicaciones</span>
+                <span class="section-heading-lower">Descargalos gratis</span>
+              </h2>
+              {{documents.title}}
+              {% if documents %}
+              {% for document in documents %}
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  <p class="mb-0">
+                    <img class="flipbook-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% if document.image %}{{document.image.url}} {% else %} {% static 'publish\no-image.png' %} {% endif %}" alt="{{document.title}}">
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="{% url 'pdf' %}">{{document.title}}</a>
+                  </p>
+                </li>
+              </ul>
+              {% endfor %}
+              {% else %}
+              <p>No hay documentos</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock content %}

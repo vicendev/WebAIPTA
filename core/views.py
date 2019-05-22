@@ -10,6 +10,3 @@ def about(request):
 
 def magazine(request):
     return render(request, "core/magazine.html")
-
-def store(request):
-    return render(request, "core/store.html")

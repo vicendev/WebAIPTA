@@ -23,7 +23,7 @@
   <body class="{% if request.get_full_path == '/' %}body-home{% endif %}
                {% if request.get_full_path == '/about/' %}body-about{% endif %}
                {% if request.get_full_path == '/magazine/' %}body-magazine{% endif %}
-               {% if request.get_full_path == '/store/' %}body-publish{% endif %}
+               {% if request.get_full_path == '/publish/' %}body-publish{% endif %}
                {% if request.get_full_path == '/contact/' %}body-formation{% endif %}">
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
@@ -50,7 +50,7 @@
               <a class="nav-link text-uppercase text-expanded" href="{% url 'magazine' %}">Revista "Caballo Azúl"</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Publicaciones</a>
+              <a class="nav-link text-uppercase text-expanded" href="{% url 'publish' %}">Publicaciones</a>
             </li>
             <li class="nav-item px-lg-4 {% if request.path == '/contact/' %}active{% endif %}">
               <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Formación</a>

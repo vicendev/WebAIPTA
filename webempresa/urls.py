@@ -30,7 +30,7 @@ urlpatterns = [
     # Path de contanct
     path('contact/', include('contact.urls')),
     # Path de flipbook
-    path('flipbook/', include('flipbook.urls')),
+    path('publish/', include('publish.urls')),
     path('admin/', admin.site.urls),
 ]
 

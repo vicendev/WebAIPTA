@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'contact',
     'core',
-    'flipbook',
+    'publish.apps.PublishConfig',
     'pages.apps.PagesConfig',
     'services.apps.ServicesConfig',
     'social.apps.SocialConfig',

@@ -334,3 +334,8 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+.flipbook-img{
+  max-width: 150px;
+  max-height: 200px;
+}
